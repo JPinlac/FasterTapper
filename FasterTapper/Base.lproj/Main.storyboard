@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNs-Lu-y6p">
+                                <rect key="frame" x="20" y="47" width="280" height="108"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="0WC-nU-HGi"/>
+                                    <constraint firstAttribute="height" constant="108" id="gUL-xG-kOD"/>
+                                </constraints>
+                                <state key="normal" title="Player 1"/>
+                                <connections>
+                                    <action selector="player1Tap" destination="BYZ-38-t0r" eventType="touchUpInside" id="TLK-vO-AJ7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: 10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vid-sk-gVP">
+                                <rect key="frame" x="126" y="273" width="69" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="69" id="8qV-cT-aFa"/>
+                                    <constraint firstAttribute="height" constant="21" id="azG-8E-ghb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="P2 Taps" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EkE-TE-o89">
+                                <rect key="frame" x="107" y="346" width="107" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="6mG-Nj-fyw"/>
+                                    <constraint firstAttribute="width" constant="107" id="KmR-oN-NZA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HaL-FF-Pbs">
+                                <rect key="frame" x="20" y="418" width="280" height="94"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="H82-lq-9q4"/>
+                                    <constraint firstAttribute="height" constant="94" id="M4P-bN-0XI"/>
+                                </constraints>
+                                <state key="normal" title="Player 2"/>
+                                <connections>
+                                    <action selector="player2Tap" destination="BYZ-38-t0r" eventType="touchUpInside" id="oOz-Ow-6g5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="P1 Taps" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLA-Kp-qdK">
+                                <rect key="frame" x="112" y="196" width="96" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="24f-1v-Dpz"/>
+                                    <constraint firstAttribute="width" constant="96" id="kcL-pW-bha"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BNs-Lu-y6p" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-183" id="0uj-JR-2bp"/>
+                            <constraint firstItem="EkE-TE-o89" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6F7-eg-gYz"/>
+                            <constraint firstItem="KLA-Kp-qdK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-77.5" id="Bs6-5x-j6I"/>
+                            <constraint firstItem="Vid-sk-gVP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HyL-9x-mgh"/>
+                            <constraint firstItem="KLA-Kp-qdK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MOy-kR-9BQ"/>
+                            <constraint firstItem="Vid-sk-gVP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ro5-fL-c7F"/>
+                            <constraint firstItem="EkE-TE-o89" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="72.5" id="St2-dm-LJ7"/>
+                            <constraint firstItem="BNs-Lu-y6p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cjK-wk-kSZ"/>
+                            <constraint firstItem="HaL-FF-Pbs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fse-74-NcD"/>
+                            <constraint firstItem="HaL-FF-Pbs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="181" id="k1V-eA-mQU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="player1Button" destination="BNs-Lu-y6p" id="FaP-sz-EVS"/>
+                        <outlet property="player1Taps" destination="KLA-Kp-qdK" id="Yld-wH-glF"/>
+                        <outlet property="player2Button" destination="HaL-FF-Pbs" id="P8T-bg-zL8"/>
+                        <outlet property="player2Taps" destination="EkE-TE-o89" id="DRh-5H-zfo"/>
+                        <outlet property="timer" destination="Vid-sk-gVP" id="JwF-mr-MON"/>
+                        <outlet property="timerLabel" destination="Vid-sk-gVP" id="Ptz-gf-huD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="406"/>
+        </scene>
+    </scenes>
+</document>
